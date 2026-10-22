@@ -6,12 +6,18 @@ Checks status and latency for one or more URLs and can emit a JSON report.
 
 ## Status
 
-Project scaffolding is in place. Probe CLI and JSON reporting will land in follow-up commits.
+Probe CLI (`src/http_probe.py`) for status and latency is in place. Packaging and tests will land in follow-up commits.
 
-## Planned run
+## Run
 
 ```powershell
 python src\http_probe.py https://example.com --json
+```
+
+Multiple URLs:
+
+```powershell
+python src\http_probe.py https://example.com https://httpbingo.org/get --timeout 3
 ```
 
 ## Requirements
