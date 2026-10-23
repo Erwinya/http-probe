@@ -14,6 +14,15 @@ Probe CLI and unit tests are in place. Packaging/CI will land in follow-up commi
 python src\http_probe.py https://example.com --json
 ```
 
+
+## Options
+
+| Flag | Default | Meaning |
+|------|---------|---------|
+| `--timeout` | `5.0` | Request timeout in seconds |
+| `--method` | `GET` | HTTP method (for example `HEAD`) |
+| `--json` | off | Emit a JSON report |
+
 ## Tests
 
 ```powershell
