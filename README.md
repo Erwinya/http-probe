@@ -6,7 +6,7 @@ Checks status and latency for one or more URLs and can emit a JSON report.
 
 ## Status
 
-Probe CLI (`src/http_probe.py`) for status and latency is in place. Packaging and tests will land in follow-up commits.
+Probe CLI and unit tests are in place. Packaging/CI will land in follow-up commits.
 
 ## Run
 
@@ -14,10 +14,10 @@ Probe CLI (`src/http_probe.py`) for status and latency is in place. Packaging an
 python src\http_probe.py https://example.com --json
 ```
 
-Multiple URLs:
+## Tests
 
 ```powershell
-python src\http_probe.py https://example.com https://httpbingo.org/get --timeout 3
+python -m unittest discover -s tests -v
 ```
 
 ## Requirements
