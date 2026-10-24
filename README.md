@@ -6,7 +6,7 @@ Checks status and latency for one or more URLs and can emit a JSON report.
 
 ## Status
 
-Probe CLI and unit tests are in place. Packaging/CI will land in follow-up commits.
+Probe CLI, unit tests, and packaging metadata are in place. CI will land in a follow-up commit.
 
 ## Run
 
@@ -14,6 +14,12 @@ Probe CLI and unit tests are in place. Packaging/CI will land in follow-up commi
 python src\http_probe.py https://example.com --json
 ```
 
+Install locally (optional):
+
+```powershell
+pip install -e .
+http-probe https://example.com --json
+```
 
 ## Options
 
