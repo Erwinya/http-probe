@@ -6,7 +6,7 @@ Checks status and latency for one or more URLs and can emit a JSON report.
 
 ## Status
 
-Probe CLI, unit tests, and packaging metadata are in place. CI will land in a follow-up commit.
+Probe CLI, unit tests, packaging, and CI are in place. Final polish lands next.
 
 ## Run
 
