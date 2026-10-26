@@ -6,7 +6,7 @@ Checks status and latency for one or more URLs and can emit a JSON report.
 
 ## Status
 
-Probe CLI, unit tests, packaging, and CI are in place. Final polish lands next.
+Complete: CLI, unit tests, packaging, and CI.
 
 ## Run
 
@@ -20,6 +20,8 @@ Install locally (optional):
 pip install -e .
 http-probe https://example.com --json
 ```
+
+Exit codes: `0` when every probe succeeds, `1` when any probe fails.
 
 ## Options
 

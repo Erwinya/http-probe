@@ -63,6 +63,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--method", default="GET")
     parser.add_argument("--json", action="store_true", help="Emit JSON report")
     args = parser.parse_args(argv)
+    args.method = args.method.upper()
 
     if args.timeout <= 0:
         raise SystemExit("--timeout must be > 0")
