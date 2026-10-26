@@ -23,6 +23,9 @@ http-probe https://example.com --json
 
 Exit codes: `0` when every probe succeeds, `1` when any probe fails.
 
+
+PowerShell: after a run, check `0` (`0` ok, `1` any failure).
+
 ## Options
 
 | Flag | Default | Meaning |
